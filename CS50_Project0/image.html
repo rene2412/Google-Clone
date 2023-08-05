@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Images</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images-container input[type="text"] {
+            border: 2px solid black;
+            width: 200px;
+            height: 20px;
+        }
+        .page-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 20px;
+    color: #70757a;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="page-links">
+        <a href="index.html">Google Search</a>
+        <a href="advance.html">Google Advanced Search</a>
+    </div>
+    <div class="images-container">
+        <form action="https://www.google.com/search" target="_blank">
+            <input type="text" name="q" placeholder="Search Google Images">
+            <input type="hidden" name="tbm" value="isch"> <!-- This sets the search type to images -->
+            <input type="submit" value="Google Images">
+        </form>
+    </div>
+</body>
+</html>
